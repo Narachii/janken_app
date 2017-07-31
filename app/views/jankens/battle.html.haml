@@ -1,0 +1,36 @@
+%main
+	.main__left
+		.character
+		%div{style: "text-align: center; font-size:30px;"} YOU!
+		.selects
+			%ul
+				.selects__content
+					.selects__image-r
+					.hands
+						%li#gu_btn グー
+				.selects__content
+					.selects__image-s
+					.hands
+						%li#cho_btn チョキ
+				.selects__content
+					.selects__image-p
+					.hands
+						%li#par_btn パー
+	.main__right
+		.character__oponent
+		%div{style: "text-align: center; font-size:30px;"} JEDI
+		.selects
+			%ul
+				.selects__content
+					.selects__image-r
+				.selects__content
+					.selects__image-s
+				.selects__content
+					.selects__image-p
+			#pc.hand
+	#message
+	.text__box
+		ジャンケン...
+		%br
+		%br
+		#result{style: "font-size:40px; text-align:center; color:red;"}

@@ -1,0 +1,154 @@
+.main{
+	&__left{
+		height: 100vh;
+		width:50%;
+		float:left;
+	}
+	&__right{
+		height: 100vh;
+		width:50%;
+		float:right;
+	}
+}
+
+.character{
+	width: 500px;
+	height:400px;
+	margin:0 auto;
+	background-image: url(rink.jpg);
+	background-repeat: no-repeat;
+	background-size: 93%;
+
+	&__oponent{
+	width: 500px;
+	height:400px;
+	margin:0 auto;
+	background-image: url(siss.jpg);
+	background-repeat: no-repeat;
+	background-size: 93%;
+	}
+}
+
+
+
+ul{
+	padding-left: 120px;
+}
+
+
+
+
+.selects__content{
+	margin-right:10px;
+	float:left;
+}
+
+.selects__image{
+	width:150px;
+	height:300px;
+	background:gray;
+	// background-image:url("hand_r.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	clear:both;
+}
+
+
+.selects__image-r{
+	width:150px;
+	height:300px;
+	background-image:url("hands_r.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+		clear:both;
+}
+
+
+.selects__image-p{
+	width:150px;
+	height:300px;
+	background-image:url("hand_p.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+		clear:both;
+}
+
+
+.selects__image-s{
+	width:150px;
+	height:300px;
+	background-image:url("hands_s.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+		clear:both;
+}
+
+
+.hands{
+	border:none;
+	background-color: #FF5A5F;
+	transition: background 0.3s, border-color 0.3s;
+	padding:20px 0;
+  border: 2px solid transparent;
+  border-radius: 4px ;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px;
+  line-height: 5px ;
+  color: white ;
+  font-weight: 400;
+  width:145px;
+  text-align: center;
+}
+
+.text__box{
+	position:absolute;
+	padding:0 10px;
+	width:200px;
+	height:200px;
+	left:43%;
+	top:57%;
+	font-size: 30px;
+}
+
+.hand{
+	border:none;
+	background-color: blue;
+	transition: background 0.3s, border-color 0.3s;
+	padding:20px 0;
+  border: 2px solid transparent;
+  border-radius: 4px ;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px;
+  line-height: 5px ;
+  color: white ;
+  font-weight: 400;
+  width:70%;
+  text-align: center;
+  clear: both;
+  margin:0 auto;
+  font-size: 30px;
+}
+
+
+.balloon__right{
+  background-color:#ddd;
+  border-radius:5px;
+  color:#222;
+  position:absolute;
+  padding:8px;
+  margin:50px;
+  right:40%;
+  top:150px;
+}
+.balloon__right::after{
+  border-top:solid 7px transparent;
+  border-bottom:solid 7px transparent;
+  border-left:solid 10px #ddd;
+  right:-10px;
+  content:"";
+  display:block;
+  height:0;
+  top:20%;
+  position:absolute;
+  width:0;
+}

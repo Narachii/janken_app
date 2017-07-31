@@ -1,0 +1,19 @@
+.text
+	Welcome To Ruby Janken Contest!!!
+	.img
+		=image_tag "rails.jpg"
+.list
+	%ul
+	-if user_signed_in?
+		%li
+			=link_to "Sign_out", destroy_user_session_path, method: :delete
+	-else
+		%li
+			.box
+				=link_to "Sign_up",new_user_registration_path,{style: "text-decoration: none;"}
+		%li
+			.box
+				=link_to "Sign_in",new_user_session_path,{style: "text-decoration: none;"}
+		%li
+			.box
+				=link_to "Play" ,tables_jankens_path,{style: "text-decoration: none;"}

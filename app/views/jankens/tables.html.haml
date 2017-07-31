@@ -1,0 +1,28 @@
+.content
+	.content__main
+		.text
+			%span{style: "text-align: center;"} Hello Everyone!!!!
+		.content__table
+			%table
+				%tr
+					%th 順番
+					%th	名前
+					%th	チケット数
+					%th	メッセージ
+				-@users.each_with_index do |user,index|
+					%tr
+						%td
+							= index + 1
+						%td
+							=user.name
+						%td
+							=user.ticket
+						%td
+							=user.text
+			%button
+				=link_to "Start",battle_jankens_path,method: :get
+	.balloon
+		%p 参加人数は#{@total_users.count}人だね。チケットは全部で#{@total_users.sum(:ticket)}枚!
+		%p ゲームを始めるよ！！
+	.img__character
+		=image_tag "Octocat.png"

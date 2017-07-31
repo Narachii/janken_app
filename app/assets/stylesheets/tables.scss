@@ -1,0 +1,121 @@
+.content{
+	width:100vw;
+	height:100vh ;
+	margin:0 auto;
+	background-image: url(http://graphicburger.com/wp-content/uploads/2013/05/wooden-floor-600.jpg);
+	background-size: 100%;
+	&__main{
+		width:50%;
+		margin:0 auto;
+	}
+
+	&__table{
+		width: 100%;
+		margin-top:20px;
+	}
+}
+
+.text{
+	font-size: 40px;
+	font-family: arial, sans-serif;
+	text-align: center;
+}
+img{
+	width:70%;
+	height:70%;
+}
+
+.list{
+	margin: 0 auto;
+	width: 30%;
+}
+li{
+	text-decoration: none;
+	margin: 0 auto;
+	float: left;
+	list-style:none;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.box{
+	text-align: right;
+	background-color: #FF5A5F;
+	transition: background 0.3s, border-color 0.3s;
+	padding:9px 27px;
+  text-align: center ;
+  border: 2px solid transparent;
+  border-radius: 4px ;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px;
+  line-height: 22px ;
+  color: white ;
+  font-weight: 400;
+
+}
+
+table{
+	border: 1px solid;
+	width:100%;
+}
+
+th{
+	border-bottom:1px solid;
+}
+td{
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+}
+
+button{
+	border:none;
+	background-color: gray;
+	height:50px;
+	margin-top: 40px;
+	margin-left:40%;
+		text-align: right;
+	background-color: #FF5A5F;
+	transition: background 0.3s, border-color 0.3s;
+	padding:9px 27px;
+  text-align: center ;
+  border: 2px solid transparent;
+  border-radius: 4px ;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px;
+  line-height: 22px ;
+  color: white ;
+  font-weight: 400;
+}
+
+
+.img__character{
+	position: absolute;
+	bottom:0;
+	width: 350px;
+	height: 350px;
+}
+
+.balloon{
+  background-color:#ddd;
+  border-radius:5px;
+  color:#222;
+  position:absolute;
+  padding:8px;
+  margin:50px;
+  left:200px;
+  bottom:200px;
+
+}
+.balloon::after{
+  border-top:solid 7px transparent;
+  border-bottom:solid 7px transparent;
+  border-right:solid 10px #ddd;
+  left:-10px;
+  content:"";
+  display:block;
+  height:0;
+  top:60%;
+  position:absolute;
+  width:0;
+}

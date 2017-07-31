@@ -1,0 +1,86 @@
+.auth {
+  &__wrap {
+    background: url(sign.png) center 0 no-repeat;
+    min-height: 100vh;
+    background-size: 120% auto;
+    &__sign {
+      width: 680px;
+      margin: 0 auto;
+      text-align: center;
+      opacity: 0.5;
+      &__form {
+        background: #fdfdfd;
+        margin-bottom: 40px;
+        width: 640px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+
+
+.label{
+  font-weight:1000px;
+}
+.field {
+  margin-bottom: 20px;
+}
+.field-input {
+  margin-right: 20px;
+}
+.user-form {
+  width: 320px;
+  height: 24px;
+  font-size: 15px;
+  padding: 10px;
+  &__detail {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+}
+.btn {
+  height: 30px;
+  width: 150px;
+  font-size: 14px;
+  background-color: orange;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  line-height: 30px;
+  margin: 20px auto;
+  opacity: 0.5;
+}
+.auth-link {
+  text-decoration: none;
+  opacity: 0.5;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 40px;
+  color: #666;
+}
+.user-setting {
+  padding-top: 50px;
+  background-color: gray;
+  width: 100%;
+  height: 300px;
+  opacity: 0.5;
+  &__content {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #fff;
+    opacity: 0.5;
+    &__title {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      opacity: 0.5;
+    }
+  }
+}
